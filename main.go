@@ -5,6 +5,8 @@ import (
 	//"time"
 )
 
+const p string = "death and taxes"
+
 func main() {
 	myInt := 10
 	fmt.Println("Program Start....")
@@ -14,8 +16,17 @@ func main() {
 }
 
 func makeCall() {
-	for i := 1; i < 10; i++ {
-		fmt.Printf("%d \t %q \n", i, i)
-	}
+
+	const q = 42
+	fmt.Println("q - ", q)
+	fmt.Println("p - ", p)
+
+	type MyBool bool
+	const True = true
+	const TypedTrue bool = true
+	var mb MyBool
+	mb = true
+	mb = True
+	fmt.Println(mb)
 
 }
